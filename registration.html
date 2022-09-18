@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+ <!-- start navbar -->
+
+ <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container">
+    <span class="pr-2"><img style="max-width: 40px; border-radius: 50%;" src="img/2.png" alt=""></span><a class="navbar-brand" href="index.html">MyWeb</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#!">Registration</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- end navbar -->
+
+<!-- start form -->
+    <div class="container-fluid">
+        <div class="row" style="background-color:#f9fbe7;">
+
+            <div class="col-lg-5 mx-auto mt-4 mb-4">
+                <div class="card form" style="border-radius: 15px;">
+                    <div class="card-body px-5">
+
+                        <div class="container text-center">
+                            <img class="img-fluid " style="max-width: 100px;" src="img/1.png" alt="alt" />
+                        </div>
+                        <h3 class="text-center ">Registration Form</h3>
+                        <hr>
+
+                        <form id="singup" action="index.html" method="get">
+
+                            <div class="form-group">
+                                <label for="#name" class="col-form-label-sm">Fullname : </label>
+                                <input type="text" name="user_name" class="form-control form-control-sm" id="name"
+                                    placeholder="Enter your fullname">
+                                <span id="nameBox" class="redBox form-group">This field is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="#email" class="col-form-label col-form-label-sm">Email : </label>
+                                <input name="user_email" type="email" class="form-control form-control-sm" id="email"
+                                    placeholder="Enter your email">
+                                <span id="emailBox1" class="redBox form-group">This field is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="#password" class="col-form-label col-form-label-sm">Password : </label>
+                                <input type="password" name="user_password" class="form-control form-control-sm"
+                                    id="password" placeholder="Enter your password">
+                                <span id="passwordBox1" class="redBox form-group">Password must be at least 8 characters
+                                    long</span>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="#phone" class="col-form-label col-form-label-sm">Phone : </label>
+                                <input type="tel" name="user_phone" class="form-control form-control-sm" id="phone"
+                                    placeholder="Enter your phone number">
+                                <span id="phoneBox" class="redBox form-group">This field is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="#address" class="col-form-label col-form-label-sm">Address : </label>
+                                <textarea name="user_address" class="form-control form-control-sm" id="address"
+                                    rows="3"></textarea>
+                                <span id="addressBox" class="redBox form-group">This field is required</span>
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <label for="inputPhone">Gender : </label>
+                                <br>
+                                <input class="" type="radio" name="gender" value="Male" checked> Male
+                                <input class="ml-2" type="radio" name="gender" value="Female"> Female
+                                <input class="ml-2" type="radio" name="gender" value="Other"> Other
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input id="check" class="form-check-input" type="checkbox" name="term_box"
+                                        value="checked">
+                                    <label class="form-check-label" for="check">i agree term and conditions<a
+                                            data-toggle="modal" data-target="#term-condition" href="">
+                                            Term&Condition</a></label>
+                                    <br><span id="termCondition" class="redBox form-group">This field is required</span>
+                                </div>
+                            </div>
+                            <div class=" mt-4">
+                                <button type="submit" class="btn btn-sm container-fluid myColor">Submit</button>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <div class=" mt-2">
+                                    <p>Already Have an Account ? <a class="link" href="index.html"> Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--start term and condition modal-->
+     <div class="modal fade" id="term-condition" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center">About Us</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, sed dolores quas cum architecto fugit saepe temporibus totam quam eveniet culpa. Repellendus officia autem quod ex nesciunt ea quibusdam quas possimus, ducimus dicta dolores necessitatibus sit molestias illo et consequatur assumenda commodi veritatis, nostrum animi quisquam. Corporis, fugit dolorum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light myColor" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end form -->
+    <!-- 	JavaScript Link -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        
+        	<!-- JavaScript Link -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="js/reh.js"></script>
+</body>
+
+</html>

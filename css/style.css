@@ -1,0 +1,77 @@
+body {
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.header {
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url("../img/my2.png");
+    color: white;
+    background-size: cover;
+}
+
+.h-100 {
+    height: 100%;
+    width: 100%;
+
+}
+
+.btn {
+    border-radius: 5rem !important;
+    padding: 6px !important;
+    border-color: rgb(170, 170, 170) !important;
+    color: rgb(151, 148, 148);
+}
+
+.btn:hover {
+    background-color: rgba(204, 197, 197, 0.8);
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.massage {
+    background-image: linear-gradient(to bottom, #b4c8e7, #bdc3ec, #cdbdec, #dfb6e6, #f2aeda);
+}
+
+.myicon {
+    font-size: 60px !important;
+    padding: 10px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.massage2 {
+    background-image: linear-gradient(to top, #b9c8dd, #a5d2e3, #9adbd8, #a8e0bf, #cddfa4);
+}
+
+.links {
+    text-decoration: none !important;
+    color: rgb(24, 23, 23) !important;
+}
+
+.card-div:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    margin-top: 20px;
+}
+.myColor{
+    background-color: #cfd8dc;
+}
+.redBox2{
+    border-color: red;
+}
+.redBox{
+    display: none;
+    color: red;
+    font-size: small;
+}
+.form:hover{box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);}
